@@ -1,214 +1,562 @@
-
 <!DOCTYPE html>
+<html class="no-js" lang="en">
 
-<html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Eurotech Integrated Technical Services</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-    body, html {
-      height: 100%;
-    }
 
-    header {
-      position: absolute;
-      width: 100%;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 10;
-    }
+    <title>Homepage - Skyline Furniture</title>
+    <meta name="description" content="" />
 
-    header img {
-      height: 60px;
-    }
+    <meta property="fb:app_id" content="">
+    <meta property="og:url" content="https://skylinefurnituremfg.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Homepage - Skyline Furniture" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Skyline Furniture" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="en_US" />
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 2rem;
-      font-weight: bold;
-    }
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:url" content="https://skylinefurnituremfg.com/" />
+    <meta name="twitter:title" content="Homepage - Skyline Furniture" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
 
-    .hero {
-      background: url('fire-background.png') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      text-align: center;
-      position: relative;
-    }
 
-    .hero::after {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      z-index: 1;
-    }
+    <link rel="home" href="https://skylinefurnituremfg.com/" />
+    <link rel="canonical" href="https://skylinefurnituremfg.com/">
 
-    .hero-content {
-      position: relative;
-      z-index: 2;
-    }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vpz4wic.css">
+    <link rel="stylesheet" href="/assets/dist/css/styles.css?id=8ece030519aa611589bcee5753bd6615">
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T94THW5R');
+    </script>
+    <!-- End Google Tag Manager -->
 
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #111;
-      color: #ccc;
-      font-size: 0.8rem;
-    }
-  
-  .contact-info {
-    font-size: 14px;
-    color: white;
-    display: inline-block;
-    margin-left: 20px;
-    vertical-align: middle;
-  }
-  .contact-info a {
-    color: white;
-    text-decoration: none;
-    margin: 0 5px;
-  }
-  .contact-info a:hover {
-    text-decoration: underline;
-  }
-
-.section {
-  padding: 40px 20px;
-  color: white;
-  text-align: center;
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropbtn {
-  background-color: #c62828;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 220px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  text-align: left;
-}
-.dropdown-content a {
-  color: black;
-  padding: 10px 15px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
-header nav ul li {
-  position: relative;
-}
-header nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-}
-header nav ul li .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  color: black;
-  min-width: 200px;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-header nav ul li .dropdown-content li a {
-  color: black;
-  display: block;
-  padding: 10px;
-}
-header nav ul li .dropdown-content li a:hover {
-  background-color: #eee;
-}
-header nav ul li:hover .dropdown-content {
-  display: block;
-}
-</style>
 </head>
-<body>
-<header>
-<img alt="Eurotech Logo" src="logo_png_eits__1_-removebg-preview.png"/>
-<div class="contact-info">
-<a href="mailto:info@eurotechgulf.com">info@eurotechgulf.com</a> |
-  <a href="tel:+971589213536">0589 213536</a>
-</div>
-<nav>
-<a href="#services">Services</a>
-<a href="#clients">Clients</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
-<section class="hero">
-<div class="hero-content">
-<h1>Welcome to Eurotech Integrated Technical Services</h1>
-<p>Experts in Fire Protection Systems across the UAE</p>
-</div>
-</section>
-<section class="section" id="services">
-<h2>Our Services</h2>
-<div class="dropdown">
-<button class="dropbtn">View Services</button>
-<div class="dropdown-content">
-<a href="#">Fire Fighting System</a>
-<a href="#">Fire Alarm System</a>
-<a href="#">Emergency Lighting System</a>
-<a href="#">Sprinkler System</a>
-<a href="#">FM200</a>
-<a href="#">CBS System</a>
-</div>
-</div>
-</section>
-<footer>
-  © 2025 EUROTECH INTEGRATED TECHNICAL SERVICES. All rights reserved.
-</footer>
+
+<body class="is-header-light">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T94THW5R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <a class="sr-only sr-only-focusable" href="#content">Skip to content</a>
+
+
+    <header x-data="{
+    isNavOpen: false,
+    handleWindowResize: function() {
+      var isDesktop = window.matchMedia('(min-width: 1280px)').matches;
+      if(isDesktop) {
+        this.isNavOpen = false;
+      }
+    }
+  }" class="site-header" x-bind:class="isNavOpen && 'is-nav-open'" x-on:click.stop x-trap.noscroll.inert="isNavOpen" x-on:resize.passive.window.debounce="handleWindowResize()">
+        <div class="container container-full mx-auto min-h-full">
+            <div class="flex items-center justify-between min-h-full">
+
+                <div class="header__branding mx-auto">
+                    <a href="https://skylinefurnituremfg.com/" aria-label="Home">
+          <span class="sr-only">Skyline Furniture</span>
+          <svg width="755.82" height="240.38" viewBox="0 0 755.82 240.38" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g fill="currentColor"><path d="m540.13 226.89h93.95v4.55h-93.95z"/><path d="m118.86 226.89h93.95v4.55h-93.95z"/><path d="m472.94 233.64a5.75 5.75 0 0 1 -4.24 1.76 6 6 0 0 1 -6.07-6 6 6 0 0 1 6.05-6 6 6 0 0 1 6.05 6.09 5.75 5.75 0 0 1 -1.79 4.2m-11.89-12.28c-2.08 2.83-3.13 5.51-3.13 8a9.8 9.8 0 0 0 3.22 7.32 10.75 10.75 0 0 0 7.62 3.09 10.72 10.72 0 0 0 10.67-10.67 9.87 9.87 0 0 0 -2.82-7.09 9 9 0 0 0 -6.73-3 6.81 6.81 0 0 0 -.69 0l-1.05.12 7.64-10.4-3.54-2.65zm-27.17 9 7.37-10.71v10.71zm12.2-25.44-20.53 29.83h15.7v4.54h4.83v-4.54h3.4v-4.39h-3.4zm-38.88 8a6.05 6.05 0 1 1 0 8.56 5.88 5.88 0 0 1 -1.77-4.35 5.76 5.76 0 0 1 1.79-4.21m11.87 12.33c2.1-2.89 3.15-5.57 3.15-8.06a9.75 9.75 0 0 0 -3.24-7.29 10.61 10.61 0 0 0 -7.6-3.11 10.72 10.72 0 0 0 -10.67 10.69 9.88 9.88 0 0 0 2.82 7.09 9 9 0 0 0 6.71 3 7 7 0 0 0 .71 0l1.05-.13-7.64 10.42 3.54 2.64zm-36.19 14.07h4.82v-32h-7.72l-2.65 4.52h5.53zm-41.7-.37a2.8 2.8 0 0 0 2.05.83 2.87 2.87 0 1 0 -2.88-2.9 2.81 2.81 0 0 0 .83 2.07m-9-15.58v-4.32h-3.63v-7.4h-4.57v7.4h-2v4.35h2v15.83h4.66v-15.83zm-23.93-4.91a6.3 6.3 0 0 0 -4.47 1.72 5.78 5.78 0 0 0 -1.81 4.35 4.91 4.91 0 0 0 1.06 3.25 8.77 8.77 0 0 0 2.86 2c.48.24 1 .46 1.43.68l1.41.69c1.21.72 1.82 1.49 1.82 2.32 0 1.44-.79 2.15-2.36 2.15a2.9 2.9 0 0 1 -2-.78 8.81 8.81 0 0 1 -1.26-1.85l-4 1.85q2.11 5 7.19 5a7.29 7.29 0 0 0 5.05-1.87 6.34 6.34 0 0 0 2.16-4.89 5 5 0 0 0 -1.29-3.62 15.88 15.88 0 0 0 -5-2.94c-1.8-.76-2.69-1.53-2.69-2.3a1.42 1.42 0 0 1 .45-1.09 1.58 1.58 0 0 1 1.1-.43c.9 0 1.65.63 2.26 1.87l3.85-2.05q-1.89-4-5.76-4m-15.66-11.25h-17.61v32h17.65v-4.54h-12.82v-10.73h12.45v-4.54h-12.45v-7.68h12.82z"/><path d="m755.82 150.35a5.43 5.43 0 1 0 -10.86 0 5.43 5.43 0 0 0 10.86 0m-27.49-20.46h-20.11v7.47h12.64v6.71a29.49 29.49 0 0 1 -14.59 4.24c-12.31 0-19-7.72-19-15.78 0-8.24 6.45-16 19.18-16 5.85 0 11.62 2.55 16.46 5.77l4.33-6a32.33 32.33 0 0 0 -20.79-7.22c-17 0-26.65 11.12-26.65 23.34 0 12.47 10.1 23.34 26.39 23.34 11.71 0 18.59-5.35 22.15-7.81zm-90.88 5.61h18.16v-7.5h-18.16v-10.1h30.8v-7.47h-38.25v44h7.47zm-33.44-25h-7.46l-16.63 25.29-16.64-25.29h-7.46v44h7.46v-30.97h.17l16.47 24.69 16.46-24.69h.17v30.89h7.45zm-99.45 36.5h-32.08v-11.5h17.15v-7.5h-17.15v-10.1h31.23v-7.47h-38.71v44h39.54zm-93.43-18v-11h20c5.69 0 8.91.42 8.91 5.35 0 4.32-3.56 5.68-8.48 5.68zm24.61 7.3c5.18-.85 11.8-3.4 11.8-13.15s-7.89-12.65-16.72-12.65h-27.15v44h7.46v-18h15.45l12.64 18h9.34zm-56.09-25.8h-7.46v24.87c0 8-1.53 13-13.75 13s-13.75-5-13.75-13v-24.91h-7.47v24.87c0 11.11 3.91 20.45 21.22 20.45s21.21-9.34 21.21-20.45zm-77.13 7.47h16.8v-7.47h-41.24v7.47h17v36.49h7.47zm-42.52-7.51h-7.47v44h7.47zm-32.75 0h-7.47v32.59l-27.49-32.59h-7.47v44h7.47v-32.71l27.49 32.67h7.47zm-97.33 18.54v-11h20c5.69 0 8.91.42 8.91 5.35 0 4.32-3.56 5.68-8.48 5.68zm24.61 7.3c5.17-.85 11.79-3.4 11.79-13.15s-7.89-12.65-16.72-12.65h-27.15v44h7.47v-18h15.44l12.65 18h9.33zm-56.09-25.8h-7.44v24.87c0 8-1.53 13-13.75 13s-13.75-5-13.75-13v-24.91h-7.5v24.87c0 11.11 3.9 20.45 21.21 20.45s21.22-9.34 21.22-20.45zm-91 25h18.19v-7.5h-18.16v-10.1h30.8v-7.47h-38.27v44h7.47z"/><path d="m554.84 37.85h-32.08v-11.46h17.14v-7.47h-17.14v-10.09h31.24v-7.47h-38.7v44h39.54zm-63.64-36.49h-7.47v32.58l-27.49-32.58h-7.47v44h7.47v-32.72l27.49 32.67h7.47zm-67.8 0h-7.47v44h7.47zm-23.59 36.49h-26.81v-36.49h-7.47v44h34.29zm-65.94-12.31 19.26-24.18h-9.5l-13.49 17.05-13.49-17h-9.51l19.26 24.13v19.77h7.47zm-51.76-8.06 17-16.12h-9.59l-21.52 19.52v-19.52h-7.47v44h7.47v-15.66l8.23-7.3 16.64 22.91h9.16zm-41.11-11.62c-2.93-1.53-11-5.86-21.69-5.86-14.76 0-20.31 6.79-20.31 14.17 0 9.17 7 12 17 12.22 16.47.43 19.35.6 19.35 6.2 0 4.92-5.51 6.61-13.41 6.61-12.39 0-17.31-3.47-22.4-6.53l-3.54 6.53c2.88 2 10.77 7.47 25.79 7.47 9.85 0 21.64-2.2 21.64-14.85 0-6.87-2.29-12.9-22.14-12.9-12.65 0-14.18-1.35-14.18-5.6 0-3.73 4.16-5.85 12.31-5.85 9.67 0 14.51 3.05 18.16 5.09z"/></g><path d="m0 0h755.82v240.38h-755.82z" fill="none"/></svg>
+
+        </a>
+                </div>
+                <nav class="header__nav" id="nav-main">
+                    <div class="header__nav-inner">
+                        <ul class="mt-16 xl:mt-0 xl:flex">
+                            <li class="my-5 xl:my-0 xl:mr-5">
+                                <a href="https://skylinefurnituremfg.com/our-story">Our Story</a>
+                            </li>
+                            <li class="my-5 xl:my-0 xl:mr-5">
+                                <a href="https://skylinefurnituremfg.com/products">Products</a>
+                            </li>
+                            <li class="my-5 xl:my-0 xl:mr-5">
+                                <a href="https://skylinefurnituremfg.com/press">Press</a>
+                            </li>
+                            <li class="my-5 xl:my-0 xl:mr-5">
+                                <a href="https://skylinefurnituremfg.com/partners">Partners</a>
+                            </li>
+                            <li class="my-5 xl:my-0 xl:mr-5">
+                                <a href="https://skylinefurnituremfg.com/trade/apply">Trade</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-links xl:hidden">
+                            <li class="my-5">
+                                <a href="https://skylinefurnituremfg.com/account/login">Login</a>
+                            </li>
+                            <li class="my-5">
+                                <a href="https://skylinefurnituremfg.com/trade/apply">Create Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <nav class="header__utility ">
+                    <ul class="lg:flex ">
+                        <li class="my-5 xl:my-0 xl:ml-5">
+                            <a href="https://skylinefurnituremfg.com/account/login">Login</a>
+                        </li>
+                        <li class="my-5 xl:my-0 lg:ml-4 xl:ml-5">
+                            <a href="https://skylinefurnituremfg.com/trade/apply">Create Account</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <button x-on:click.prevent="isNavOpen ? isNavOpen = false : isNavOpen = true" class="header__nav-toggle" aria-controls="nav-main">
+        <span class="header__nav-open">
+          <span class="sr-only">Menu</span>
+          <svg class="icon icon-menu" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path d="m26 20v2h-22v-2zm0-6v2h-22v-2zm0-6v2h-22v-2z" fill="#444444" fill-rule="evenodd"/></svg>
+
+        </span>
+        <span class="header__nav-close">
+          <span class="sr-only">Close</span>
+          <svg class="icon icon-close" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path d="m5.41421356 4 9.58578644 9.5857864 9.5857864-9.5857864h1.4142136v1.41421356l-9.593 9.59278644 9.593 9.593v1.4142136h-1.4142136l-9.5857864-9.5857865-9.58578644 9.5857865h-1.41421356v-1.4142136l9.593-9.593-9.593-9.59278644v-1.41421356z" fill="#444444"/></svg>
+
+        </span>
+      </button>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="main" id="content">
+
+
+
+        <div class="hero is-hero-large">
+            <div class="hero__video">
+                <div class="hero__video-inner">
+                    <video autoplay muted loop playsinline webkit-playsinline aria-hidden="true">
+          <source src="https://skylinefurnituremfg.com/uploads/video/SF-Factory-Footage-Shorter.mp4" type="video/mp4">
+        </video>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="relative hidden welcome__stamp lg:block" aria-hidden="true"></div>
+
+        <div class="section section--welcome">
+            <div class="container max-w-6xl mx-auto">
+
+                <div class="relative grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-12 lg:gap-5">
+
+                    <div class="relative max-w-sm welcome__image md:max-w-none">
+                        <img class="lazyload" width="1015" height="1498" alt="Skyline Homepage Image Aug3 B" data-src="https://skylinefurnituremfg.com/uploads/images/Skyline_HomepageImage_Aug3_B.jpg" data-srcset="https://skylinefurnituremfg.com/uploads/images/_2030xAUTO_crop_center-center_none/Skyline_HomepageImage_Aug3_B.jpg 2x">
+
+                        <div class="hidden is-text-vertical is-position-left lg:block" aria-hidden="true">
+                            <span>Family Owned</span>
+                            <span class="rule"></span>
+                            <span>Since 1946</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 text-sm welcome__body md:mt-0 md:pl-0 lg:pl-24 lg:pr-18">
+                        <div class="welcome__heading md:mt-10 lg:mb-16">
+                            <h1 class="text-6xl lg:text-7xl lg:leading-tight">Welcome</h1>
+                        </div>
+                        <h2 class="my-8 h4">From our founders</h2>
+
+                        <p>When Norman Wecker started Skyline Furniture in 1946, he laid the foundation of a legacy brand. He understood that a great business is built by great people, and that mantra holds true to this day. We have honed our craft over
+                            the years, passing down skills and knowledge through generations of families that have worked within our factory walls.</p>
+                        <p>While Skyline is our family’s business, we know that a great company is always the sum of its parts. With the help of our incredible team of craftspeople, innovators, and artists, Skyline has perfected the art and science of producing
+                            quality upholstered goods. We effortlessly blend traditional manufacturing techniques with cutting-edge technology to deliver custom made-to-order products to millions of homes around the country.</p>
+                        <p>Skyline has been a labor of love for over 75 years. We’re proud of our reputation for being innovators in the industry, yet at our core we’re still the Chicago-based furniture company that Norman envisioned all those years ago.</p>
+                        <p>From our hands to yours.</p>
+
+                        <div class="text-right welcome__cta">
+                            <div class="welcome__signature">
+                                <img class="lazyload" width="1947" height="967" alt="Home Page Signature" data-src="https://skylinefurnituremfg.com/uploads/images/Home-Page_Signature.png" data-srcset="https://skylinefurnituremfg.com/uploads/images/_3894xAUTO_crop_center-center_none/Home-Page_Signature.png 2x">
+                            </div>
+                            <a class="btn btn-primary" href="https://skylinefurnituremfg.com/our-story"><span>Our Story</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.grid -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+
+
+
+
+
+
+
+
+        <div class="section section--columns is-section-padded bg-paper-50">
+            <div class="container max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-10 md:gap-12 lg:gap-12">
+
+
+                    <div class="lg:col-span-3 lg:pr-4 text-sm lg:col-start-2">
+                        <div class="card__icon mb-14">
+                            <img class="lazyload mx-auto" width="88" height="88" alt="STITCH ICON" data-src="https://skylinefurnituremfg.com/uploads/images/icons/STITCH_ICON.png" data-srcset="https://skylinefurnituremfg.com/uploads/images/icons/_576xAUTO_crop_center-center_none/STITCH_ICON.png 2x">
+                        </div>
+                        <div class="card__body text-sm">
+                            <h2 class="h4 my-8 text-center">DESIGN</h2>
+                            <p>We've become known throughout the industry for our designs, unique shapes, and bold print and patterns. Our wide array of textiles and silhouettes are often designed in-house, pulling from over 75 years of archives and an extensive
+                                library of bespoke textiles. </p>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-3 lg:pr-4 text-sm ">
+                        <div class="card__icon mb-14">
+                            <img class="lazyload mx-auto" width="88" height="88" alt="SCISSOR ICON" data-src="https://skylinefurnituremfg.com/uploads/images/icons/SCISSOR_ICON.png" data-srcset="https://skylinefurnituremfg.com/uploads/images/icons/_576xAUTO_crop_center-center_none/SCISSOR_ICON.png 2x">
+                        </div>
+                        <div class="card__body text-sm">
+                            <h2 class="h4 my-8 text-center">CRAFTSMANSHIP</h2>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p dir="ltr">Guided by decades of experience, every piece of our furniture is handmade. With materials sourced from throughout the U.S, our team works hard to ensure top quality and eco-conscious practices at every stage
+                                                of production and design.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p><br /></p>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-3 lg:pr-4 text-sm ">
+                        <div class="card__icon mb-14">
+                            <img class="lazyload mx-auto" width="88" height="88" alt="INNOVATION ICON" data-src="https://skylinefurnituremfg.com/uploads/images/icons/INNOVATION_ICON.png" data-srcset="https://skylinefurnituremfg.com/uploads/images/icons/_576xAUTO_crop_center-center_none/INNOVATION_ICON.png 2x">
+                        </div>
+                        <div class="card__body text-sm">
+                            <h2 class="h4 my-8 text-center">INNOVATION</h2>
+                            <p>Our balance of innovation and tradition has become our hallmark. From pioneering an e-commerce-focused supply chain to digital printing and rendering, our commitment to technology has made us one of the leading furniture manufacturers
+                                in the country.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.grid -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+
+
+
+        <div class="section section--feature is-section-flush">
+            <div class="mx-auto container-max max-w-screen-2xl">
+                <div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-12 lg:gap-5">
+
+                    <div class="relative w-full h-full feature__image">
+
+                        <div class="w-full slider" data-flickity='{ "cellSelector": ".slider__slide", "cellAlign": "left", "contain": true, "adaptiveHeight": false, "imagesLoaded": true, "pageDots": false, "wrapAround": true }'>
+
+                            <div class="relative w-full slider__slide">
+                                <img class="lazyload" src="data:image/svg+xml,%3Csvg xmlns=&#039;http://www.w3.org/2000/svg&#039; width=&#039;1330&#039; height=&#039;1730&#039; style=&#039;background:transparent&#039;/%3E" width="1330" height="1730" alt="Verdure Navy Bed" data-src="https://skylinefurnituremfg.com/uploads/images/_feature1013/Verdure-Navy-Bed.jpg"
+                                    data-srcset="https://skylinefurnituremfg.com/uploads/images/_768x999_crop_center-center_none/Verdure-Navy-Bed.jpg 768w, https://skylinefurnituremfg.com/uploads/images/_1024x1332_crop_center-center_none/Verdure-Navy-Bed.jpg 1024w, https://skylinefurnituremfg.com/uploads/images/_1330x1730_crop_center-center_none/Verdure-Navy-Bed.jpg 1330w"
+                                    sizes="auto">
+                            </div>
+                            <div class="relative w-full slider__slide">
+                                <img class="lazyload" src="data:image/svg+xml,%3Csvg xmlns=&#039;http://www.w3.org/2000/svg&#039; width=&#039;1330&#039; height=&#039;1730&#039; style=&#039;background:transparent&#039;/%3E" width="1330" height="1730" alt="Swivel" data-src="https://skylinefurnituremfg.com/uploads/images/_feature1013/Swivel.jpg"
+                                    data-srcset="https://skylinefurnituremfg.com/uploads/images/_768x999_crop_center-center_none/Swivel.jpg 768w, https://skylinefurnituremfg.com/uploads/images/_1024x1332_crop_center-center_none/Swivel.jpg 1024w, https://skylinefurnituremfg.com/uploads/images/_1330x1730_crop_center-center_none/Swivel.jpg 1330w"
+                                    sizes="auto">
+                            </div>
+                            <div class="relative w-full slider__slide">
+                                <img class="lazyload" src="data:image/svg+xml,%3Csvg xmlns=&#039;http://www.w3.org/2000/svg&#039; width=&#039;1330&#039; height=&#039;1730&#039; style=&#039;background:transparent&#039;/%3E" width="1330" height="1730" alt="Cloth and Company October 2021 023"
+                                    data-src="https://skylinefurnituremfg.com/uploads/images/gallery/_feature1013/Cloth-and-Company-October-2021_023.jpg" data-srcset="https://skylinefurnituremfg.com/uploads/images/gallery/_768x999_crop_center-center_none/Cloth-and-Company-October-2021_023.jpg 768w, https://skylinefurnituremfg.com/uploads/images/gallery/_1024x1332_crop_center-center_none/Cloth-and-Company-October-2021_023.jpg 1024w, https://skylinefurnituremfg.com/uploads/images/gallery/_1330x1730_crop_center-center_none/Cloth-and-Company-October-2021_023.jpg 1330w"
+                                    sizes="auto">
+                            </div>
+                            <div class="relative w-full slider__slide">
+                                <img class="lazyload" src="data:image/svg+xml,%3Csvg xmlns=&#039;http://www.w3.org/2000/svg&#039; width=&#039;1330&#039; height=&#039;1730&#039; style=&#039;background:transparent&#039;/%3E" width="1330" height="1730" alt="Slipcover Dining Koh Block"
+                                    data-src="https://skylinefurnituremfg.com/uploads/images/_feature1013/Slipcover-Dining-Koh-Block.jpg" data-srcset="https://skylinefurnituremfg.com/uploads/images/_768x999_crop_center-center_none/Slipcover-Dining-Koh-Block.jpg 768w, https://skylinefurnituremfg.com/uploads/images/_1024x1332_crop_center-center_none/Slipcover-Dining-Koh-Block.jpg 1024w, https://skylinefurnituremfg.com/uploads/images/_1330x1730_crop_center-center_none/Slipcover-Dining-Koh-Block.jpg 1330w"
+                                    sizes="auto">
+                            </div>
+                            <div class="relative w-full slider__slide">
+                                <img class="lazyload" src="data:image/svg+xml,%3Csvg xmlns=&#039;http://www.w3.org/2000/svg&#039; width=&#039;1330&#039; height=&#039;1730&#039; style=&#039;background:transparent&#039;/%3E" width="1330" height="1730" alt="French seam bed" data-src="https://skylinefurnituremfg.com/uploads/images/_feature1013/French-seam-bed.jpg"
+                                    data-srcset="https://skylinefurnituremfg.com/uploads/images/_768x999_crop_center-center_none/French-seam-bed.jpg 768w, https://skylinefurnituremfg.com/uploads/images/_1024x1332_crop_center-center_none/French-seam-bed.jpg 1024w, https://skylinefurnituremfg.com/uploads/images/_1330x1730_crop_center-center_none/French-seam-bed.jpg 1330w"
+                                    sizes="auto">
+                            </div>
+
+                        </div>
+                        <!-- /.slider -->
+
+                    </div>
+                    <!-- /.feature__image -->
+
+                    <div class="justify-center mt-6 text-sm feature__body md:mt-0 md:pl-0 lg:pl-24 lg:pr-16 md:flex md:flex-col lg:h-full">
+                        <div class="px-6 md:max-w-sm pb-18 md:pb-0 md:px-0 md:pr-4">
+                            <div class="mb-10 md:mt-10 lg:mb-16">
+                                <h2 class="mb-10 h1 lg:text-3xl">OUR PRODUCTS</h2>
+                            </div>
+                            <p>It's the details that make our furniture so unique. We offer a range of upholstered products for the bedroom, dining room, living room, and office and all of our pieces are made-to-order, featuring endlessly customizable fabrics
+                                and finishes. You can find our custom-made furniture at top retailers online and across the country.</p>
+                            <div class="mt-10 mr-3 text-right lg:mt-20">
+                                <a class="btn btn-primary" href="https://skylinefurnituremfg.com/products"><span>View products</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.feature__body -->
+
+                </div>
+                <!-- /.grid -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+
+
+
+        <div class="section section--feature-press is-section-padded is-section-flush bg-paper-50">
+            <div class="container max-w-6xl mx-auto relative">
+
+                <div class="is-text-vertical is-offset-left hidden lg:block">
+                    <span>In the press</span>
+                    <span class="rule"></span>
+                </div>
+
+
+                <div class="grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-10 md:gap-5">
+
+
+                    <div class="lg:col-span-2 lg:col-start-2 text-sm">
+                        <div class="card__body">
+                            <p class="is-eyebrow mb-3">Forbes</p>
+                            <h2 class="h2 lg:text-bigger mt-0 is-byline">Meganne Wecker On The Evolution Of Skyline Furniture And Cloth &amp; Company</h2>
+                            <p>In the grand scheme of the furniture industry, there are very few brands that manufacture in the United States, particularly outside of North Carolina. There are even fewer that are run by female executives. But that’s what
+                                makes Meganne Wecker a true unicorn. She is the president and chief creative officer of Skyline Furniture Manufacturing, which is a brand founded by her grandfather.</p>
+                            <p><a href="https://www.forbes.com/sites/amandalauren/2023/02/17/meganne-wecker-on-the-evolution-of-skyline-furniture-and-cloth--company/?sh=72c35bdb340e" target="_blank" class="action" rel="noopener" aria-label="Visit https://www.forbes.com/sites/amandalauren/2023/02/17/meganne-wecker-on-the-evolution-of-skyline-furniture-and-cloth--company/?sh=72c35bdb340e (opens in a new window)"><span class="sr-only">Read article</span></a></p>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-2 lg:col-start-5 text-sm">
+                        <div class="card__body">
+                            <p class="is-eyebrow mb-3">Furniture Today</p>
+                            <h2 class="h2 lg:text-bigger mt-0 is-byline">Women of Influence 2024: Meganne Wecker</h2>
+                            <p>While Skyline Furniture may not be a household name among consumers, the company is making its mark among designers and retailers for its cutting-edge technology and quick turn-around times for custom orders. The driving force
+                                behind Skyline's technology and innovation is Meganne Wecker, the third-generation president of the family-owned company that was founded by her grandfather in 1946. </p>
+                            <p><a href="https://www.furnituretoday.com/furniture-people/meganne-wecker-skyline-furniture-mfg/" target="_blank" class="action" rel="noopener" aria-label="Visit https://www.furnituretoday.com/furniture-people/meganne-wecker-skyline-furniture-mfg/ (opens in a new window)"><span class="sr-only">Read article</span></a></p>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-2 lg:col-start-8 text-sm">
+                        <div class="card__body">
+                            <p class="is-eyebrow mb-3">New York Times</p>
+                            <h2 class="h2 lg:text-bigger mt-0 is-byline">Getting Comfortable with Furniture Customization</h2>
+                            <p>A growing number of e-commerce companies are offering personal choices at affordable prices. It’s a similar story at Skyline Furniture, a manufacturing company outside Chicago that was founded in 1946 and offers quick, custom-made
+                                furniture produced through recently acquired equipment.</p>
+                            <p><a href="https://www.nytimes.com/2020/03/11/style/furniture-customization.html" target="_blank" class="action" rel="noopener" aria-label="Visit https://www.nytimes.com/2020/03/11/style/furniture-customization.html (opens in a new window)"><span class="sr-only">Read article</span></a></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.grid -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+
+        <div class="section section--feature-press is-section-padded is-section-flush bg-paper-50">
+            <div class="container max-w-4xl mx-auto relative">
+
+                <h2 class="h4 lg:mt-16">Also featured in</h2>
+
+                <div class="slider slider--press" data-flickity='{ "cellSelector": ".slider__slide", "cellAlign": "left", "contain": false, "adaptiveHeight": false, "imagesLoaded": false, "pageDots": false, "groupCells": false, "wrapAround": true }'>
+
+                    <div class="slider__slide">
+                        <a href="https://skylinefurnituremfg.com/press?filter=new-york-times" class="card--logo">
+              <img class="grayscale mix-blend-darken lazyload" width="82" height="70" alt="New york times logo" data-src="https://skylinefurnituremfg.com/uploads/images/logos/_logo/New-york-times-logo_2023-07-06-154017_blet.png" data-srcset="https://skylinefurnituremfg.com/uploads/images/logos/_164x140_fit_center-center_none/New-york-times-logo_2023-07-06-154017_blet.png 2x">
+            </a>
+                    </div>
+                    <div class="slider__slide">
+                        <a href="https://skylinefurnituremfg.com/press?filter=house-beautiful" class="card--logo">
+              <img class="grayscale mix-blend-darken lazyload" width="96" height="70" alt="House Beautiful" data-src="https://skylinefurnituremfg.com/uploads/images/logos/_logo/House-Beautiful.png" data-srcset="https://skylinefurnituremfg.com/uploads/images/logos/_192x140_fit_center-center_none/House-Beautiful.png 2x">
+            </a>
+                    </div>
+                    <div class="slider__slide">
+                        <a href="https://skylinefurnituremfg.com/press?filter=better-homes-and-gardens" class="card--logo">
+              <img class="grayscale mix-blend-darken lazyload" width="82" height="70" alt="Better homes and gardens logo" data-src="https://skylinefurnituremfg.com/uploads/images/logos/_logo/Better-homes-and-gardens-logo.png" data-srcset="https://skylinefurnituremfg.com/uploads/images/logos/_164x140_fit_center-center_none/Better-homes-and-gardens-logo.png 2x">
+            </a>
+                    </div>
+                    <div class="slider__slide">
+                        <a href="https://skylinefurnituremfg.com/press?filter=hgtv-magazine" class="card--logo">
+              <img class="grayscale mix-blend-darken lazyload" width="82" height="70" alt="HGTV Logo" data-src="https://skylinefurnituremfg.com/uploads/images/logos/_logo/HGTV-Logo.png" data-srcset="https://skylinefurnituremfg.com/uploads/images/logos/_164x140_fit_center-center_none/HGTV-Logo.png 2x">
+            </a>
+                    </div>
+                    <div class="slider__slide">
+                        <a href="https://skylinefurnituremfg.com/press?filter=real-simple" class="card--logo">
+              <img class="grayscale mix-blend-darken lazyload" width="82" height="70" alt="Real simple Logo" data-src="https://skylinefurnituremfg.com/uploads/images/logos/_logo/Real-simple-Logo.png" data-srcset="https://skylinefurnituremfg.com/uploads/images/logos/_164x140_fit_center-center_none/Real-simple-Logo.png 2x">
+            </a>
+                    </div>
+                    <div class="slider__slide">
+                        <a href="https://skylinefurnituremfg.com/press?filter=chicago-tribune" class="card--logo">
+              <img class="grayscale mix-blend-darken lazyload" width="82" height="70" alt="Chicago Tribune Logo" data-src="https://skylinefurnituremfg.com/uploads/images/logos/_logo/Chicago-Tribune-Logo_2023-07-06-160809_rmtr.png" data-srcset="https://skylinefurnituremfg.com/uploads/images/logos/_164x140_fit_center-center_none/Chicago-Tribune-Logo_2023-07-06-160809_rmtr.png 2x">
+            </a>
+                    </div>
+                    <div class="slider__slide">
+                        <a href="https://skylinefurnituremfg.com/press?filter=forbes" class="card--logo">
+              <img class="grayscale mix-blend-darken lazyload" width="82" height="70" alt="Forbes logo copy" data-src="https://skylinefurnituremfg.com/uploads/images/logos/_logo/Forbes-logo-copy.png" data-srcset="https://skylinefurnituremfg.com/uploads/images/logos/_164x140_fit_center-center_none/Forbes-logo-copy.png 2x">
+            </a>
+                    </div>
+
+                </div>
+                <!-- /.slider -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+        <div class="section section--feature-press is-section-padded is-section-flush bg-paper-50">
+            <div class="container max-w-4xl mx-auto relative">
+                <p class="text-center"><a href="https://skylinefurnituremfg.com/press" class="btn btn-primary"><span>View all Press</span></a></p>
+            </div>
+        </div>
+        <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+
+        <div class="section section--divider is-divider-stealth is-page-bottom">
+            <hr>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer__top bg-gray-700">
+            <div class="container container-inset mx-auto py-12 lg:py-24 overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+                    <nav class="footer__col relative">
+                        <span class="footer__col-heading text-xs font-bold tracking-widest uppercase text-silver ">Ways to Shop</span>
+                        <ul>
+                            <li><a href="/products" class="text-smaller leading-normal no-underline text-paper-100 hover:text-white ">Explore Products</a></li>
+                            <li><a href="https://skylinefurnituremfg.com/partners" class="text-smaller leading-normal no-underline text-paper-100 hover:text-white ">Retail Partners</a></li>
+                            <li><a href="https://skylinefurnituremfg.com/trade/apply" class="text-smaller leading-normal no-underline text-paper-100 hover:text-white ">Trade Program</a></li>
+                            <li><a href="https://skylinefurnituremfg.com/swatches" class="text-smaller leading-normal no-underline text-paper-100 hover:text-white ">Fabric Library</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__col relative">
+                        <span class="footer__col-heading text-xs font-bold tracking-widest uppercase text-silver is-position-bottom">Contact Us</span>
+                        <ul>
+                            <li><a href="https://skylinefurnituremfg.com/contact" class="text-smaller leading-normal no-underline text-paper-100 hover:text-white ">Contact Us</a></li>
+                            <li><a href="https://skylinefurnituremfg.com/frequently-asked-questions" class="text-smaller leading-normal no-underline text-paper-100 hover:text-white ">FAQ</a></li>
+                            <li class="mt-3">
+                                <strong class="text-smaller leading-normal text-paper-100">Skyline Furniture, Mfg.</strong>
+                                <address class="text-smaller leading-5 text-paper-100 not-italic">
+                  401 N. Williams St.<br />Thornton, IL 60476
+                </address>
+                            </li>
+                            <li><a href="tel:8005427553" class="text-smaller leading-normal no-underline text-paper-100 hover:text-white ">800.542.7553 (Toll Free)</a></li>
+                            <li><a href="tel:7088779500" class="text-smaller leading-normal no-underline text-paper-100 hover:text-white ">708.877.9500 (Local)</a></li>
+                            <li><span class="text-smaller leading-normal no-underline text-paper-100 hover:text-white ">708.877.9504 (FAX)</span></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__col relative">
+                        <span class="footer__col-heading text-xs font-bold tracking-widest uppercase text-silver ">Company</span>
+                        <ul>
+                            <li><a href="https://skylinefurnituremfg.com/our-story" class="text-smaller leading-normal no-underline text-paper-100 hover:text-white ">Our Story</a></li>
+                            <li><a href="https://skylinefurnituremfg.com/press" class="text-smaller leading-normal no-underline text-paper-100 hover:text-white ">Press</a></li>
+                            <li><a href="https://skylinefurnituremfg.com/careers" class="text-smaller leading-normal no-underline text-paper-100 hover:text-white ">Careers</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__col relative">
+                        <span class="footer__col-heading text-xs font-bold tracking-widest uppercase text-silver ">Showroom</span>
+                        <ul>
+                            <li class="">
+                                <strong class="text-smaller leading-normal text-paper-100">North Carolina</strong>
+                                <address class="text-smaller leading-5 text-paper-100 not-italic">
+                  High Point Market<br />220 Elm Street, Space #212<br />High Point, NC 27260<br /><a href="https://www.highpointmarket.org/" target="_blank" rel="noreferrer noopener">highpointmarket.org</a>
+                </address>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__col relative">
+                        <span class="footer__col-heading text-xs font-bold tracking-widest uppercase text-silver ">Compliance</span>
+                        <ul>
+                            <li><a href="https://skylinefurnituremfg.com/privacy-policy" class="text-smaller leading-normal no-underline text-paper-100 hover:text-white ">Privacy Policy</a></li>
+                            <li><a href="https://skylinefurnituremfg.com/certificates-resources" class="text-smaller leading-normal no-underline text-paper-100 hover:text-white ">Certificates &amp; Resources</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom bg-gray-800">
+            <div class="container mx-auto flex flex-col md:flex-row md:items-center md:justify-between py-12">
+                <div class="footer__branding mb-5 md:mb-0">
+                    <a href="https://clothandcompany.com" class="text-paper-600 hover:text-paper-100 no-underline text-xs uppercase tracking-widest font-bold flex flex-row items-center" aria-label="(opens in a new window)" target="_blank" rel="noopener">
+          <span class="block mb-3 mr-4">Also visit</span>
+          <svg class="w-[102px]" width="357.7" height="126.66" viewBox="0 0 357.7 126.66" xmlns="http://www.w3.org/2000/svg"><path d="m71 104.91a5.77 5.77 0 0 1 1.81 1.09 5.08 5.08 0 0 1 1.19 1.52 4.75 4.75 0 0 1 .5 1.79l-2.33.49h-.2a.73.73 0 0 1 -.45-.14 1 1 0 0 1 -.32-.44 4.12 4.12 0 0 0 -.34-.74 2.71 2.71 0 0 0 -.51-.61 2.31 2.31 0 0 0 -.7-.41 2.36 2.36 0 0 0 -.92-.16 2.62 2.62 0 0 0 -1.11.22 2.38 2.38 0 0 0 -.84.58 2.53 2.53 0 0 0 -.52.85 2.88 2.88 0 0 0 -.18 1 4 4 0 0 0 .1.86 3.57 3.57 0 0 0 .31.84 4.79 4.79 0 0 0 .54.85 10.57 10.57 0 0 0 .82 1l5.71 6a10 10 0 0 0 .79-2 11.13 11.13 0 0 0 .39-2.12.89.89 0 0 1 .22-.55.7.7 0 0 1 .54-.21h2.3a13.36 13.36 0 0 1 -.56 3.76 12 12 0 0 1 -1.58 3.29l4.51 4.68h-3.6a3.73 3.73 0 0 1 -.5 0 1.91 1.91 0 0 1 -.41-.11 2 2 0 0 1 -.37-.22 2.8 2.8 0 0 1 -.37-.34l-1.49-1.54a11 11 0 0 1 -3.17 1.82 10.67 10.67 0 0 1 -3.79.66 7.09 7.09 0 0 1 -2.44-.43 6.83 6.83 0 0 1 -2.13-1.22 6.28 6.28 0 0 1 -1.5-2 5.55 5.55 0 0 1 -.58-2.57 5.46 5.46 0 0 1 .33-1.9 6.52 6.52 0 0 1 .91-1.68 7.25 7.25 0 0 1 1.37-1.4 8.63 8.63 0 0 1 1.75-1.07 8.59 8.59 0 0 1 -1.18-2.22 6.62 6.62 0 0 1 -.37-2.12 5.56 5.56 0 0 1 .41-2.12 5.08 5.08 0 0 1 1.19-1.76 5.82 5.82 0 0 1 1.91-1.13 6.91 6.91 0 0 1 2.56-.44 6.34 6.34 0 0 1 2.34.4m-7.23 16.63a3.29 3.29 0 0 0 .77 1.12 3.69 3.69 0 0 0 1.14.7 3.91 3.91 0 0 0 1.37.24 6.52 6.52 0 0 0 2.39-.41 6.81 6.81 0 0 0 2-1.14l-5.65-5.81a5.11 5.11 0 0 0 -1.76 1.71 4.23 4.23 0 0 0 -.54 2.09 3.6 3.6 0 0 0 .28 1.47"/><path d="m97.18 115.93v-.06a10.54 10.54 0 0 1 10.73-10.78 10.82 10.82 0 0 1 8.15 3.25l-2.35 2.71a8.26 8.26 0 0 0 -5.83-2.59c-4 0-6.86 3.27-6.86 7.35v.06c0 4.09 2.88 7.42 6.86 7.42 2.56 0 4.2-1 6-2.71l2.35 2.38a10.72 10.72 0 0 1 -8.45 3.7 10.48 10.48 0 0 1 -10.58-10.73"/><path d="m126 115.93v-.06a10.88 10.88 0 0 1 21.75-.06v.06a10.68 10.68 0 0 1 -10.91 10.79 10.57 10.57 0 0 1 -10.84-10.73m17.92 0v-.06a7.13 7.13 0 0 0 -7.08-7.41 7 7 0 0 0 -7 7.35v.06a7.13 7.13 0 0 0 7.07 7.42 7 7 0 0 0 7-7.36"/><path d="m176.13 105.45-6.33 9.86-6.33-9.86h-3.9v20.85h3.6v-14.89l6.51 9.77h.12l6.57-9.83v14.95h3.65v-20.85z"/><path d="m192.8 105.45h8.2c4.84 0 7.9 2.77 7.9 7v.06c0 4.67-3.74 7.12-8.32 7.12h-4.13v6.7h-3.65zm7.91 10.84c2.76 0 4.49-1.55 4.49-3.72v-.06c0-2.44-1.76-3.72-4.49-3.72h-4.25v7.5z"/><path d="m227 109.68 3.6 8.34h-7.17zm-1.63-4.38-9.16 21h3.79l2.14-5h9.86l2.11 5h3.86l-9.15-21z"/><path d="m263.45 105.45v14.42l-11.14-14.42h-3.39v20.85h3.59v-14.83l11.48 14.83h3.06v-20.85z"/><path d="m293.71 105.45-5.88 9.23-5.83-9.23h-4.31l8.26 12.63v8.22h3.69v-8.31l8.26-12.54z"/><path d="m60.09 63.93a33.24 33.24 0 0 1 -4.92 4.34 30.72 30.72 0 0 1 -5.83 3.3 33.63 33.63 0 0 1 -6.93 2.1 42.64 42.64 0 0 1 -8.29.75 35.17 35.17 0 0 1 -13.82-2.65 30.54 30.54 0 0 1 -10.78-7.51 34.51 34.51 0 0 1 -7-11.75 44.57 44.57 0 0 1 -2.52-15.33 42.22 42.22 0 0 1 2.59-15.11 34.57 34.57 0 0 1 7.29-11.76 32.47 32.47 0 0 1 11.24-7.61 37.48 37.48 0 0 1 14.44-2.7q10.2 0 23.19 5.22v16.41h-2.49c-1.39 0-2.13-.83-2.21-2.49 0-.81-.23-4.52-.55-11.12a44.44 44.44 0 0 0 -17.94-3.49 31.5 31.5 0 0 0 -12.16 2.29 27 27 0 0 0 -9.54 6.53 29.93 29.93 0 0 0 -6.24 10.28 38.86 38.86 0 0 0 -2.23 13.55 40.22 40.22 0 0 0 2.2 13.82 30 30 0 0 0 6.11 10.23 26.52 26.52 0 0 0 9.21 6.43 29.39 29.39 0 0 0 11.52 2.23 42.56 42.56 0 0 0 7-.51 27.5 27.5 0 0 0 5.57-1.54 25.78 25.78 0 0 0 4.77-2.52 35.94 35.94 0 0 0 4.36-3.5 4 4 0 0 1 .49-.34 1.13 1.13 0 0 1 .54-.12 1.19 1.19 0 0 1 .87.36z"/><path d="m119.85 60h2v13.6h-49.18v-2c0-1.14.68-1.75 2-1.82h1l2.33-.15 3.36-.12v-64.6l-3.36-.12-2.28-.07h-1c-1.35-.07-2-.68-2-1.82v-2h22.46v2c0 1.15-.67 1.75-2 1.82h-1l-2.27.07-3.35.12v64.21h30c.08-1.46.16-2.69.24-3.66s.16-1.67.22-2.09.09-.71.1-.85c.08-1.66.81-2.49 2.21-2.49z"/><path d="m198.81 52.49a33.77 33.77 0 0 1 -7.08 11.72 31.35 31.35 0 0 1 -10.93 7.51 38.62 38.62 0 0 1 -28.12 0 31.26 31.26 0 0 1 -10.93-7.51 34.14 34.14 0 0 1 -7.11-11.72 43.71 43.71 0 0 1 -2.54-15.31 43.43 43.43 0 0 1 2.54-15.24 34.09 34.09 0 0 1 7.11-11.73 31.44 31.44 0 0 1 10.93-7.53 35.66 35.66 0 0 1 14-2.68 36.31 36.31 0 0 1 14.12 2.65 31.27 31.27 0 0 1 10.93 7.53 34 34 0 0 1 7.08 11.76 43.9 43.9 0 0 1 2.52 15.24 44.18 44.18 0 0 1 -2.52 15.31m-5-29a29.56 29.56 0 0 0 -5.92-10.28 25.41 25.41 0 0 0 -9.22-6.46 30.88 30.88 0 0 0 -11.95-2.23 30.44 30.44 0 0 0 -11.83 2.23 26 26 0 0 0 -9.24 6.46 29.4 29.4 0 0 0 -6 10.28 41.18 41.18 0 0 0 -2.13 13.68 41.11 41.11 0 0 0 2.13 13.71 29.4 29.4 0 0 0 6 10.26 25.71 25.71 0 0 0 9.24 6.43 30.81 30.81 0 0 0 11.83 2.21 31.25 31.25 0 0 0 11.95-2.21 25.22 25.22 0 0 0 9.22-6.43 29.56 29.56 0 0 0 5.92-10.26 41.38 41.38 0 0 0 2.11-13.71 41.44 41.44 0 0 0 -2.11-13.68"/><path d="m271.08.82v15.1h-2.5c-1.39 0-2.13-.83-2.21-2.49 0-.18-.14-2.9-.4-8.13h-21.14v64.21l3.35.12 2.28.07h1c1.35.07 2 .68 2 1.82v2h-22.46v-2c0-1.14.68-1.75 2-1.82h1l2.27-.07 3.36-.12v-64.21h-21.28c-.24 4.71-.37 7.42-.41 8.13-.08 1.66-.82 2.49-2.21 2.49h-2.49v-15.1z"/><path d="m354.69 4.72-2.28.07-3.36.12v64.6l3.36.12 2.28.07h1c1.36.07 2 .68 2 1.82v2h-22.57v-2c0-1.14.68-1.75 2-1.82h1l2.28-.07 3.35-.12v-30.78h-45.45v30.78l3.35.12 2.27.07h1c1.35.07 2 .68 2 1.82v2h-22.56v-2c0-1.14.68-1.75 2-1.82h1l2.28-.07 3.36-.12v-64.6l-3.36-.12-2.28-.07h-1c-1.36-.07-2-.68-2-1.82v-2.08h22.57v2.05c0 1.14-.68 1.75-2 1.82h-1l-2.27.07-3.35.12v29.88h45.46v-29.85l-3.35-.12-2.28-.07h-1c-1.35-.07-2-.68-2-1.82v-2.08h22.56v2.05c0 1.14-.68 1.75-2 1.82h-1"/></svg>
+
+        </a>
+                </div>
+                <nav class="footer__nav flex flex-col md:flex-row md:items-center">
+                    <p class="footer__copyright order-2 md:order-1 text-xs font-bold font-sans tracking-widest uppercase text-paper-600 m-0">&copy;2025 Skyline Furniture</p>
+                    <ul class="footer__social flex order-1 md:order-2 mt-4 md:mt-0 md:ml-5 mb-5 md:mb-0">
+                        <li class="mx-2 ">
+                            <a href="http://www.pinterest.com/skylinemfg/" class="text-paper-600 hover:text-paper-100" aria-label="Visit us on Pinterest (opens in a new window)" target="_blank" rel="noopener">
+                <svg class="icon icon-pinterest" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+              </a>
+                        </li>
+                        <li class="mx-2 ">
+                            <a href="https://www.instagram.com/skylinefurniture/" class="text-paper-600 hover:text-paper-100" aria-label="Visit us on Instagram (opens in a new window)" target="_blank" rel="noopener">
+                <svg class="icon icon-instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+              </a>
+                        </li>
+                        <li class="mx-2 md:mr-0">
+                            <a href="https://www.facebook.com/skylinefurnituremfg" class="text-paper-600 hover:text-paper-100" aria-label="Visit us on Facebook (opens in a new window)" target="_blank" rel="noopener">
+                <svg class="icon icon-facebook" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path d="m22 1.375v19.25c0 .7519531-.6230469 1.375-1.375 1.375h-5.5v-8.5507812h2.75l.4619141-3.1689454h-3.2119141v-2.49218746c0-.90234375.4619141-1.41796875 1.375-1.41796875h2.0625v-2.85742188s-.9238281-.15039062-2.2558594-.15039062c-3.0185547 0-4.5439453 1.67578125-4.5439453 4.17871093v2.73925778h-2.74999999v3.1689454h2.74999999v8.5507812h-10.3876953c-.75195312 0-1.375-.6230469-1.375-1.375v-19.25c0-.75195312.62304688-1.375 1.375-1.375h19.25c.7519531 0 1.375.62304688 1.375 1.375z" fill="#444444" transform="translate(4 4)"/></svg>
+
+              </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+    </footer>
+
+
+    <script defer src="/assets/dist/js/app.js?id=22e570d911853ec456f621531ec7c3af"></script>
+
+
+    <script src="https://unpkg.com/htmx-ext-alpine-morph@2.0.4/alpine-morph.js" defer></script>
 </body>
+
 </html>

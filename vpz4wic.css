@@ -1,0 +1,52 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * copperplate:
+ *   - http://typekit.com/eulas/000000000000000077359ede
+ * itc-american-typewriter:
+ *   - http://typekit.com/eulas/00000000000000007735bc6b
+ *   - http://typekit.com/eulas/00000000000000007735bc73
+ *
+ * © 2009-2025 Adobe Systems Incorporated. All Rights Reserved.
+ */
+
+/*{"last_published":"2023-01-25 17:32:59 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=vpz4wic&ht=tk&f=11904.39340.39342&a=88483497&app=typekit&e=css");
+@font-face {
+    font-family: "copperplate";
+    src: url("https://use.typekit.net/af/96602a/000000000000000077359ede/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/96602a/000000000000000077359ede/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/96602a/000000000000000077359ede/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "itc-american-typewriter";
+    src: url("https://use.typekit.net/af/334407/00000000000000007735bc6b/30/l?subset_id=2&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/334407/00000000000000007735bc6b/30/d?subset_id=2&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/334407/00000000000000007735bc6b/30/a?subset_id=2&fvd=n3&v=3") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "itc-american-typewriter";
+    src: url("https://use.typekit.net/af/6761cd/00000000000000007735bc73/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/6761cd/00000000000000007735bc73/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/6761cd/00000000000000007735bc73/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: normal;
+}
+
+.tk-copperplate {
+    font-family: "copperplate", serif;
+}
+
+.tk-itc-american-typewriter {
+    font-family: "itc-american-typewriter", serif;
+}
